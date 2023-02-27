@@ -2,6 +2,17 @@
  * @license RequireJS 2.3.6 Copyright jQuery Foundation and other contributors.
  * Released under MIT license, https://github.com/requirejs/requirejs/blob/master/LICENSE
  */
+require.config({
+    enforceDefine: true,
+    paths: {
+      nodemailer: 'chemin/vers/nodemailer'
+    }
+  });
+  
+  define(['nodemailer'], function(nodemailer) {
+    // Votre code ici
+  });
+
 var requirejs, require, define;
 ! function (global, setTimeout) {
     var req, s, head, baseElement, dataMain, src, interactiveScript, currentlyAddingScript, mainScript, subPath, version = "2.3.6",
