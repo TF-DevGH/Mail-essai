@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./require.js"></script>
     <script src="./mail.js"></script>
-    
+    <!-- Inclure la bibliothèque RequireJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+
+<script>
+  // Configuration RequireJS
+  require.config({
+    paths: {
+      "nodemailer": "https://cdn.jsdelivr.net/npm/nodemailer/dist/nodemailer.min"
+    }
+  });
+
+  // Charger le fichier mail.js
+  require(["mail"], function(mail) {
+    // Votre code ici
+  });
+</script>
 </head>
 
 <body>
