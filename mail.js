@@ -1,9 +1,4 @@
 // Configuration RequireJS
-require.config({
-    paths: {
-      "nodemailer": "https://cdn.jsdelivr.net/npm/nodemailer/dist/nodemailer.min"
-    }
-  });
   
   // Charger le module nodemailer
   require(["nodemailer"], function(nodemailer) {
