@@ -1,0 +1,12 @@
+header h1 {
+  color: blue;
+}
+
+main #envoyer-email {
+  cursor: pointer;
+}
+main #modifier-prix-ok {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
